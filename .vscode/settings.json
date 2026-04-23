@@ -1,0 +1,27 @@
+{
+    "cmake.sourceDirectory": "/workspaces/ws_link_assurance_demo/src/link_assurance",
+    "python.autoComplete.extraPaths": [
+        "/opt/ros/kilted/lib/python3.12/site-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/opt/ros/kilted/lib/python3.12/site-packages"
+    ],
+    "python.defaultInterpreterPath": "/usr/bin/python3",
+    "python.terminal.activateEnvironment": false,
+    "terminal.integrated.profiles.linux": {
+        "ROS Kilted Workspace": {
+            "path": "bash",
+            "args": [
+                "-lc",
+                "source /opt/ros/kilted/setup.bash && [ -f /workspaces/ws_link_assurance_demo/install/setup.bash ] && source /workspaces/ws_link_assurance_demo/install/setup.bash; exec bash -i"
+            ]
+        }
+    },
+    "terminal.integrated.defaultProfile.linux": "ROS Kilted Workspace",
+    "python.testing.pytestArgs": [
+        "src"
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true,
+    "explorer.excludeGitIgnore": true
+}

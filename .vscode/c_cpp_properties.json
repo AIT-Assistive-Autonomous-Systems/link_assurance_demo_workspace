@@ -1,0 +1,27 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/workspaces/ws_link_assurance_demo/install/link_assurance_station/include/**",
+        "/workspaces/ws_link_assurance_demo/install/link_assurance_agent/include/**",
+        "/workspaces/ws_link_assurance_demo/install/link_assurance_core/include/**",
+        "/workspaces/ws_link_assurance_demo/install/link_assurance_msgs/include/**",
+        "/opt/ros/kilted/include/**",
+        "/workspaces/ws_link_assurance_demo/src/link_assurance/link_assurance_agent/include/**",
+        "/workspaces/ws_link_assurance_demo/src/link_assurance/link_assurance_core/include/**",
+        "/workspaces/ws_link_assurance_demo/src/link_assurance/link_assurance_station/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++17"
+    }
+  ],
+  "version": 4
+}

@@ -1,0 +1,191 @@
+{
+  "configById": {
+    "StateTransitions!1q870fp": {
+      "paths": [
+        {
+          "value": "/link_assurance/station_health.external_link_state",
+          "timestampMethod": "receiveTime",
+          "customStates": {
+            "type": "discrete",
+            "states": [
+              {
+                "value": "0",
+                "label": "data = 0"
+              },
+              {
+                "value": "1",
+                "color": "#ffb782",
+                "label": "data = 1"
+              },
+              {
+                "value": "2",
+                "color": "#ff8282",
+                "label": "data = 2"
+              }
+            ]
+          }
+        },
+        {
+          "value": "/link_assurance/agents/agent_1/health.external_link_state",
+          "timestampMethod": "receiveTime",
+          "customStates": {
+            "type": "discrete",
+            "states": [
+              {
+                "value": "0",
+                "label": "data = 0"
+              },
+              {
+                "value": "1",
+                "color": "#ffb782",
+                "label": "data = 1"
+              },
+              {
+                "value": "2",
+                "color": "#ff8282",
+                "label": "data = 2"
+              }
+            ]
+          }
+        },
+        {
+          "value": "/link_assurance/agents/agent_2/health.external_link_state",
+          "timestampMethod": "receiveTime",
+          "customStates": {
+            "type": "discrete",
+            "states": [
+              {
+                "value": "0",
+                "label": "data = 0"
+              },
+              {
+                "value": "1",
+                "color": "#ffb782",
+                "label": "data = 1"
+              },
+              {
+                "value": "2",
+                "color": "#ff8282",
+                "label": "data = 2"
+              }
+            ]
+          }
+        }
+      ],
+      "isSynced": true
+    },
+    "RawMessages!yg04p": {
+      "defaultExpanded": false,
+      "topicPath": "/link_assurance/link_quality_summary"
+    },
+    "DiagnosticSummary!16zps7e": {
+      "minLevel": 0,
+      "pinnedIds": [],
+      "hardwareIdFilter": "",
+      "topicToRender": "/diagnostics",
+      "sortByLevel": true,
+      "secondsUntilStale": 5
+    },
+    "DiagnosticStatusPanel!3lvs26h": {
+      "selectedHardwareId": "agent_1",
+      "selectedName": "link_assurance_agent: link_assurance_agent",
+      "topicToRender": "/diagnostics"
+    },
+    "Plot!4jwmfkl": {
+      "paths": [
+        {
+          "timestampMethod": "receiveTime",
+          "value": "/link_assurance/agents/agent_1/health.rtt_ms_inbound",
+          "enabled": true
+        },
+        {
+          "timestampMethod": "receiveTime",
+          "value": "/link_assurance/agents/agent_2/health.rtt_ms_inbound",
+          "enabled": true
+        },
+        {
+          "timestampMethod": "receiveTime",
+          "value": "/link_assurance/agents/agent_1/health.rtt_ms_outbound",
+          "enabled": true
+        },
+        {
+          "timestampMethod": "receiveTime",
+          "value": "/link_assurance/agents/agent_2/health.rtt_ms_outbound",
+          "enabled": true
+        },
+        {
+          "timestampMethod": "receiveTime",
+          "value": "/link_assurance/station_health.rtt_ms_inbound",
+          "enabled": true
+        },
+        {
+          "timestampMethod": "receiveTime",
+          "value": "/link_assurance/station_health.rtt_ms_outbound",
+          "enabled": true
+        }
+      ]
+    },
+    "Plot!3t6axkm": {
+      "paths": [
+        {
+          "timestampMethod": "receiveTime",
+          "value": "/link_assurance/agents/agent_1/health.jitter_ms_inbound",
+          "enabled": true
+        },
+        {
+          "timestampMethod": "receiveTime",
+          "value": "/link_assurance/agents/agent_2/health.jitter_ms_outbound",
+          "enabled": true
+        },
+        {
+          "timestampMethod": "receiveTime",
+          "value": "/link_assurance/agents/agent_1/health.jitter_ms_outbound",
+          "enabled": true
+        },
+        {
+          "timestampMethod": "receiveTime",
+          "value": "/link_assurance/agents/agent_2/health.jitter_ms_outbound",
+          "enabled": true
+        },
+        {
+          "timestampMethod": "receiveTime",
+          "value": "/link_assurance/station_health.jitter_ms_inbound",
+          "enabled": true
+        },
+        {
+          "timestampMethod": "receiveTime",
+          "value": "/link_assurance/station_health.jitter_ms_outbound",
+          "enabled": true
+        }
+      ]
+    }
+  },
+  "globalVariables": {},
+  "userNodes": {},
+  "playbackConfig": {
+    "speed": 1
+  },
+  "layout": {
+    "direction": "row",
+    "first": {
+      "first": "StateTransitions!1q870fp",
+      "second": "RawMessages!yg04p",
+      "direction": "column"
+    },
+    "second": {
+      "direction": "row",
+      "first": {
+        "direction": "column",
+        "second": "DiagnosticStatusPanel!3lvs26h",
+        "first": "DiagnosticSummary!16zps7e"
+      },
+      "second": {
+        "first": "Plot!4jwmfkl",
+        "second": "Plot!3t6axkm",
+        "direction": "column"
+      },
+      "splitPercentage": 39.93886907794192
+    },
+    "splitPercentage": 30.5378627034678
+  }
+}

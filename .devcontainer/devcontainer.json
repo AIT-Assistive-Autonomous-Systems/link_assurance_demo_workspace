@@ -1,0 +1,40 @@
+{
+  "name": "ros2-link-assurance-demo",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": ".."
+  },
+  "workspaceFolder": "/workspaces/ws_link_assurance_demo",
+  "remoteUser": "ubuntu",
+  "containerUser": "ubuntu",
+  "updateRemoteUserUID": true,
+  "workspaceMount": "source=${localWorkspaceFolder},target=/workspaces/ws_link_assurance_demo,type=bind",
+  "containerEnv": {
+    "ROS_DISTRO": "kilted",
+    "RMW_IMPLEMENTATION": "rmw_zenoh_cpp",
+    "ROS_DOMAIN_ID": "42"
+  },
+  "runArgs": [
+    "--network=host",
+    "--cap-add=NET_ADMIN",
+    "--mount=type=bind,source=/var/run/docker.sock,target=/var/run/docker.sock"
+  ],
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-vscode.cpptools",
+        "ms-vscode.cmake-tools",
+        "ms-python.python",
+        "ms-iot.vscode-ros",
+        "xaver.clang-format",
+        "twxs.cmake"
+      ],
+      "settings": {
+        "C_Cpp.default.cppStandard": "c++17",
+        "editor.formatOnSave": true,
+        "python.defaultInterpreterPath": "/usr/bin/python3"
+      }
+    }
+  },
+  "postCreateCommand": "bash scripts/bootstrap.sh --devcontainer"
+}

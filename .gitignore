@@ -1,0 +1,10 @@
+build/
+install/
+log/
+src/*
+!src/.gitkeep
+.bootstrap/
+__pycache__/
+*.pyc
+.DS_Store
+.vs

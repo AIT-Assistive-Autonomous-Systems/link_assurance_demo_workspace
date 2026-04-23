@@ -1,0 +1,5 @@
+repositories:
+  link_assurance:
+    type: git
+    url: https://github.com/AIT-Assistive-Autonomous-Systems/link_assurance.git
+    version: main

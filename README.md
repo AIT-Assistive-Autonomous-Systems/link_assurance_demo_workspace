@@ -1,3 +1,5 @@
+![Repo Header Image](docs/repo_header_image.png)
+> Header illustration carefully crafted with ChatGPT Image 2.0, coffee, and excessive concern about robot connectivity.
 # Link Assurance Demo Workspace
 
 Top-level ROS 2 workspace for the Link Assurance demo system.
